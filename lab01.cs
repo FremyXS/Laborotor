@@ -49,7 +49,7 @@ namespace lab01_ver2
             }
             else if (y == 4 | y == 6 | y == 9 | y == 11) //если у месяца всего 30 дней, то выполняем проверку
             {
-                if (z < 1 & z > 30) 
+                if (z < 1 || z > 30) 
                 {
                     Console.WriteLine($"Уууупс... В этом месяце нет такого дня как {z}");
                     return;
@@ -86,7 +86,7 @@ namespace lab01_ver2
                 }
                 else
                 {
-                    if (z2 < 1 & z2 > 28)
+                    if (z2 < 1 || z2 > 28)
                     {
                         Console.WriteLine($"Уууупс... В этом месяце нет такого дня как {z2}");
                         return;
